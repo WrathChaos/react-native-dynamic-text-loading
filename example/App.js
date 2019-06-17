@@ -1,21 +1,17 @@
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import Loading from "./lib/src/components/Loading";
+import React, { Component } from "./node_modules/react";
+import { SafeAreaView, StyleSheet, View } from "react-native";
+import Loading from "./lib/src/Loading";
+import { ShowcaseScreen } from "./src/components/ShowcaseScreen";
 
-const instructions = Platform.select({
-  ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
-  android:
-    "Double tap R on your keyboard to reload,\n" +
-    "Shake or press menu button for dev menu"
-});
+console.disableYellowBox = true;
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <SafeAreaView style={styles.container}>
+          <ShowcaseScreen />
+        </SafeAreaView>
         <Loading />
       </View>
     );
