@@ -1,12 +1,15 @@
 {
-  "name": "react-native-text-loading",
+  "name": "react-native-dynamic-text-loading",
   "version": "0.0.1",
-  "description": "Changes the text while loading screen for React Native.",
+  "description": "Dynamically changes the text while loading screen for React Native.",
   "keywords": [
     "ios",
     "android",
     "modal",
     "loading",
+    "dynamic",
+    "dynamic-text-loading",
+    "text-loading",
     "text-changes",
     "text",
     "react-native-text",

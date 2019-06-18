@@ -1,6 +1,6 @@
 import React, { Component } from "./node_modules/react";
 import { SafeAreaView, StyleSheet, View } from "react-native";
-import Loading from "./lib/src/Loading";
+import Loading from "react-native-dynamic-text-loading";
 import { ShowcaseScreen } from "./src/components/ShowcaseScreen";
 
 console.disableYellowBox = true;
