@@ -1,4 +1,4 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 import { SafeAreaView, StyleSheet, View } from "react-native";
 import Loading from "react-native-dynamic-text-loading";
 import { ShowcaseScreen } from "./src/components/ShowcaseScreen";
