@@ -32,7 +32,7 @@ export default class Loading extends Component {
       this.setState({ currentText: textList[counter] });
       setTimeout(() => {
         this.fadeOut();
-      }, 1250);
+      }, 1350);
     }, 1850);
   }
 

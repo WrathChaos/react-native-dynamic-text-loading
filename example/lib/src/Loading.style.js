@@ -11,8 +11,9 @@ export default {
   },
   loadingTextStyle: {
     width: width * 0.8,
+    height: 70,
     fontSize: 24,
-    marginTop: 32,
+    marginTop: 36,
     fontWeight: "800",
     textAlign: "center",
     color: "white"
