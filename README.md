@@ -60,11 +60,6 @@ import Loading from "react-native-dynamic-text-loading";
 | numberOfLines    | number  |          2           | RECOMMENDED! Do NOT change the number of lines, users cannot read long texts below 1.5 sec |
 
 
-### Todos
-
-[x] LICENSE
-[ ] Write an article about the lib on Medium
-
 ## Author
 
 FreakyCoder, kurayogun@gmail.com
