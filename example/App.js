@@ -1,18 +1,36 @@
 import React, { Component } from "react";
 import { SafeAreaView, StyleSheet, View } from "react-native";
-import Loading from "react-native-dynamic-text-loading";
+// import Loading from "react-native-dynamic-text-loading";
 import { ShowcaseScreen } from "./src/components/ShowcaseScreen";
+import Loading from "./lib/src/Loading";
 
 console.disableYellowBox = true;
 
+const newList = ["Hello...", "Hello2...", "Hello3..."];
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      list: [
+        "Assets are loading...",
+        "Data is fetching...",
+        "Running an algorithm..."
+      ]
+    };
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ list: newList });
+    }, 7500);
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <SafeAreaView style={styles.container}>
           <ShowcaseScreen />
         </SafeAreaView>
-        <Loading />
+        <Loading list={this.state.list} />
       </View>
     );
   }
